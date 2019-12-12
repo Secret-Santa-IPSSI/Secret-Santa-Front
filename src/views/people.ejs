@@ -3,8 +3,7 @@
             <meta charset="utf_8">
             <title>Secret Santa</title>
             <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-                  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
             <link rel="stylesheet" type="text/css" href="css/style.css">
         </head>
     <body>
@@ -20,17 +19,17 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/group">List Group</a>
+                        <a class="nav-link" href="/group">Group</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/people">List people</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/people">Add group</a>
+                        <a class="nav-link" href="/people">People</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <h1>Home Page</h1>
+        <h1>People</h1>
+        <% for (const people of people) { %>
+            <p class="table">- <%= paragraphe %> -</p>
+        <%}%>
     </body>
 </html>
